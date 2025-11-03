@@ -5,6 +5,7 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Experience from './components/Experience'
 import Skills from './components/Skills'
+import Hobbies from './components/Hobbies'
 import Contact from './components/Contact'
 import './App.css'
 
@@ -53,6 +54,7 @@ function App() {
         <Experience experiences={experiences} />
         <Projects projects={projects} />
         <Skills />
+        <Hobbies />
         <Contact />
       </main>
       <footer>
