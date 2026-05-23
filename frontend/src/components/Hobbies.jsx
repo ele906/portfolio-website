@@ -12,14 +12,12 @@ function Hobbies() {
       ]
     },
     {
-      title: "Geography Explorer 🗺️",
-      description: "I love learning about geography - from traversing the highest mountains in the Urals to exploring mysterious plateaus in the Yilgarn Craton. I enjoy understanding the stories behind the land and how geography shapes our world.",
-      images: []
-    },
-    {
-      title: "Astronomy & Indigenous Advocacy 🌟",
-      description: "I'm passionate about the intersection of astronomy and Indigenous communities. I've written about conflicts like the Thirty Meter Telescope on Mauna Kea, exploring how we can decolonize science and respect Indigenous knowledge.",
-      images: []
+      title: "Astronomy🌟",
+      description: "I love physics and astronomy! Back in high school, I represented Canada and participated in the 16th International Olympiad of Astronomy and Astrophysics. Even though I'm now doing CS, I still love to nerd out about astro when I get the chance :).",
+      images: [
+        "/portfolio-website/images/ioaa_1.jpg",
+        "/portfolio-website/images/ioaa_2.jpg",
+      ]
     }
   ]
 
@@ -27,8 +25,8 @@ function Hobbies() {
     <section id="hobbies" className="section">
       <h2>Beyond Code</h2>
       <p className="section-intro">
-        I believe being a well-rounded engineer means having diverse interests and perspectives. 
-        Here are some things I'm passionate about outside of software development!
+        Being a well-rounded engineer means having diverse interests and perspectives. 
+        Here are some things I'm passionate about outside of software!
       </p>
       
       <div className="hobbies-list">

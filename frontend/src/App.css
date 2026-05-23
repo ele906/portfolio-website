@@ -202,9 +202,14 @@ main {
   font-weight: 500;
 }
 
-.project-link {
-  display: inline-block;
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   margin-top: 1rem;
+}
+
+.project-link {
   color: var(--primary-color);
   text-decoration: none;
   font-weight: 500;
@@ -212,6 +217,25 @@ main {
 
 .project-link:hover {
   text-decoration: underline;
+}
+
+.link-divider {
+  color: var(--border-color);
+  user-select: none;
+}
+
+@keyframes goose-bounce {
+  0%   { transform: scale(1);    box-shadow: 0 0 0px rgba(37, 99, 235, 0); }
+  15%  { transform: scale(1.06); box-shadow: 0 0 24px rgba(37, 99, 235, 0.5); }
+  35%  { transform: scale(0.94); }
+  55%  { transform: scale(1.03); box-shadow: 0 0 12px rgba(37, 99, 235, 0.3); }
+  75%  { transform: scale(0.98); }
+  100% { transform: scale(1);    box-shadow: 0 0 0px rgba(37, 99, 235, 0); }
+}
+
+#goose-game.goose-bounce {
+  animation: goose-bounce 0.9s ease;
+  transition: none;
 }
 
 /* Skills Section */

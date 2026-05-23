@@ -83,8 +83,8 @@ function getLocalProjects() {
       title: "Honkonomics: Goose Flock Simulation",
       description: "Interactive web application simulating predator-prey dynamics using Python and Kivy framework. Implemented stochastic simulations using probabilistic methods to model environmental effects on flock behavior.",
       technologies: ["Python", "Web Development", "Stochastic Simulation"],
-      website: "https://ele906.github.io/GooseGameWebAI/",
-      github: "https://github.com/ele906/GooseGameWebAI",
+      website: "https://ele906.github.io/GooseGame/",
+      github: "https://github.com/ele906/GooseGame",
       date: "June 2025 - Aug 2025"
     },
     {
