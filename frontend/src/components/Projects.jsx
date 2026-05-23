@@ -15,6 +15,11 @@ function Projects({ projects }) {
                 <span key={idx} className="tech-tag">{tech}</span>
               ))}
             </div>
+            {project.website && (
+              <a href={project.website} target="_blank" rel="noopener noreferrer" className="project-link">
+                {project.id === 1 ? 'Play the game →' : 'Visit site →'}
+              </a>
+            )}
             {project.github && (
               <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">
                 View on GitHub →
