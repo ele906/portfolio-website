@@ -6,7 +6,6 @@ import Projects from './components/Projects'
 import Experience from './components/Experience'
 import Skills from './components/Skills'
 import Hobbies from './components/Hobbies'
-import Contact from './components/Contact'
 import './App.css'
 
 // API base URL - change this when you deploy the backend
@@ -46,16 +45,21 @@ function App() {
     return <div className="loading">Loading...</div>
   }
 
+  const sweExperiences = experiences.filter(e => e.section === 'swe')
+  const researchExperiences = experiences.filter(e => e.section === 'research')
+  const otherExperiences = experiences.filter(e => e.section === 'other')
+
   return (
     <div className="App">
       <Header />
       <main>
         <About />
-        <Experience experiences={experiences} />
+        <Experience experiences={sweExperiences} title="Software Engineering" id="swe-experience" />
+        <Experience experiences={researchExperiences} title="ML Research" id="research" />
         <Projects projects={projects} />
-        <Skills />
         <Hobbies />
-        <Contact />
+        <Skills />
+        <Experience experiences={otherExperiences} title="Other Experience" id="other-experience" />
       </main>
       <footer>
         <p>&copy; 2024 Eleanor Liu. Built with React and Node.js.</p>

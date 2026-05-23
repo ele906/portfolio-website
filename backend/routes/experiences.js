@@ -5,6 +5,36 @@ const router = express.Router()
 // In-memory data store
 const experiences = [
   {
+    id: 5,
+    title: "Backend Engineering Intern",
+    company: "NimbleRx (Y Combinator 2015)",
+    location: "Redwood City, CA",
+    date: "May 2026 - Aug 2026",
+    description: [
+      "Built barcode scanner feature in Java to retrieve data from FatSecretAPI; integrated into Flutter mobile frontend",
+      "Wrote unit and functional tests across multiple service classes, improving code coverage before deployment",
+      "Resolved production bug across the backend, including issues in PostgreSQL queries and REST API request handling",
+      "Deployed backend services via CI/CD pipelines"
+    ],
+    skills: ["Java", "Flutter", "PostgreSQL", "REST APIs", "CI/CD", "Testing"],
+    type: "internship",
+    section: "swe"
+  },
+  {
+    id: 6,
+    title: "Independent Research",
+    company: "Princeton University",
+    location: "Princeton, NJ",
+    date: "May 2026 - Present",
+    description: [
+      "Researching fairness and interpretability of machine learning systems, and how it applies to visual systems",
+      "Advised by Professor Vikram Ramaswamy (https://www.cs.princeton.edu/~vr23/)"
+    ],
+    skills: ["Machine Learning", "Fairness", "Interpretability", "Computer Vision", "Research"],
+    type: "research",
+    section: "research"
+  },
+  {
     id: 1,
     title: "Software Engineering Intern",
     company: "MacDermid Alpha Electronic Solutions",
@@ -17,7 +47,8 @@ const experiences = [
       "Deployed application as standalone executable across three research centers"
     ],
     skills: ["Python", "TensorFlow", "OpenCV", "Full-Stack Development", "Agile", "Code Reviews"],
-    type: "internship"
+    type: "internship",
+    section: "swe"
   },
   {
     id: 2,
@@ -31,7 +62,8 @@ const experiences = [
       "Debugged and resolved data inconsistencies in production database, collaborating with senior engineers"
     ],
     skills: ["Python", "SQL", "Data Pipelines", "Database Management", "Problem Solving"],
-    type: "internship"
+    type: "internship",
+    section: "other"
   },
   {
     id: 3,
@@ -45,7 +77,8 @@ const experiences = [
       "Collaborated with research team to understand project requirements and deliver analysis solutions"
     ],
     skills: ["Python", "NumPy", "Matplotlib", "Data Analysis", "Research"],
-    type: "research"
+    type: "research",
+    section: "other"
   },
   {
     id: 4,
@@ -54,12 +87,13 @@ const experiences = [
     location: "Princeton, NJ",
     date: "Sept 2024 - Present",
     description: [
-      "Teaching Assistant for Intro to Computer Science (COS126) and General Physics II (PHY110)",
+      "Teaching Assistant for Intro to Computer Science (COS126), General Physics II (PHY110), Circuits (ECE203)",
       "Help students understand fundamental programming concepts and problem-solving techniques",
       "Hold office hours and grade assignments for classes of 200+ students"
     ],
-    skills: ["Teaching", "Computer Science", "Physics", "Communication"],
-    type: "teaching"
+    skills: ["Teaching", "Computer Science", "Physics", "Electrical Engineering", "Communication"],
+    type: "teaching",
+    section: "other"
   }
 ]
 

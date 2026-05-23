@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Experience({ experiences }) {
+function Experience({ experiences, title, id }) {
   return (
-    <section id="experience" className="section">
-      <h2>Experience</h2>
+    <section id={id} className="section">
+      <h2>{title}</h2>
       <div className="experience-list">
         {experiences.map((exp) => (
           <div key={exp.id} className="experience-card">

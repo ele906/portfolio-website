@@ -7,9 +7,10 @@ const projects = [
   {
     id: 1,
     title: "Honkonomics: Goose Flock Simulation",
-    description: "Interactive Android application simulating predator-prey dynamics using Python and Kivy framework. Implemented stochastic simulations using probabilistic methods to model environmental effects on flock behavior.",
-    technologies: ["Python", "Kivy", "Mobile Development", "Stochastic Simulation"],
-    github: "https://github.com/ele906/honkonomics",
+    description: "Interactive web application simulating predator-prey dynamics using Python and Kivy framework. Implemented stochastic simulations using probabilistic methods to model environmental effects on flock behavior.",
+    technologies: ["Python", "Web Development", "Stochastic Simulation"],
+    website: "https://ele906.github.io/GooseGameWebAI/",
+    github: "https://github.com/ele906/GooseGameWebAI",
     date: "June 2025 - Aug 2025",
     featured: true
   },
@@ -18,17 +19,18 @@ const projects = [
     title: "Personal Portfolio Website",
     description: "Full-stack web application with React frontend and Node.js backend, implementing REST API architecture for data management. Demonstrates proficiency in modern web development practices and design patterns.",
     technologies: ["React", "Node.js", "MongoDB", "REST APIs", "Express"],
+    website: "https://ele906.github.io/portfolio-website/",
     github: "https://github.com/ele906/portfolio-website",
     date: "Sept 2024 - Dec 2024",
     featured: true
   },
   {
     id: 3,
-    title: "Particle Detection System",
-    description: "Full-stack application with Python backend integrating TensorFlow and OpenCV for automated particle detection, achieving 95% accuracy and reducing analysis time from hours to seconds.",
-    technologies: ["Python", "TensorFlow", "OpenCV", "Computer Vision", "Data Analysis"],
-    date: "May 2025 - Aug 2025",
-    featured: false
+    title: "Hooked — Music Discovery App",
+    description: "RESTful API built with React and Flask/Python backend with 15+ endpoints covering song recommendations, search, user profiles, and a friend system. Features a personalized recommendation algorithm (4.7/5 user satisfaction), Google OAuth + JWT authentication, and a PostgreSQL schema across 10 tables.",
+    technologies: ["Python", "Flask", "React", "PostgreSQL", "JWT", "Google OAuth"],
+    date: "Jan 2026 - May 2026",
+    featured: true
   }
 ]
 

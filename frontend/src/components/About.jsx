@@ -15,21 +15,13 @@ function About() {
           </div>
           <div className="about-text">
             <p>
-              Hi! I'm Eleanor Liu, a Computer Science student at Princeton University 
-              with a minor in Statistics & Machine Learning. I'm passionate about 
-              building full-stack applications and exploring the intersection of 
-              software engineering and artificial intelligence.
+              Hi, I'm Eleanor Liu! I'm a CS student at Princeton with a minor in Stats & ML, currently in my junior year.
             </p>
             <p>
-              Currently maintaining a 3.97 GPA and recognized with the Shapiro Prize 
-              for Academic Excellence (Top 3% of Class). I have hands-on experience 
-              with full-stack development, machine learning, and data engineering from 
-              internships at MacDermid Alpha and Hydrogen in Motion.
+              I like building things with code, including full-stack apps, data pipelines, ML systems. This summer I'm at NimbleRx working on backend infrastructure, and I've done stints at MacDermid Alpha (computer vision for particle detection) and Hydrogen in Motion (database recovery from scratch).
             </p>
             <p>
-              When I'm not coding, you'll find me spending time with geese (yes, really!), 
-              exploring geography, or working on projects that blend my love for 
-              astronomy and indigenous advocacy.
+              Outside of code I'm into astronomy, geography, and most importantly, geese! (Please scroll down to play my goose game :D)
             </p>
           </div>
         </div>
@@ -40,7 +32,7 @@ function About() {
           <a href="https://linkedin.com/in/ele906" target="_blank" rel="noopener noreferrer">
             LinkedIn
           </a>
-          <a href="mailto:el8403@princeton.edu">
+          <a href="mailto:e36@princeton.edu">
             Email
           </a>
         </div>
