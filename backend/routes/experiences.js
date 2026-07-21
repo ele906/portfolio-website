@@ -25,12 +25,13 @@ const experiences = [
     title: "Independent Research",
     company: "Princeton University",
     location: "Princeton, NJ",
-    date: "May 2026 - Present",
+    date: "Apr. 2026 - Present",
     description: [
-      "Researching fairness and interpretability of machine learning systems, and how it applies to visual systems",
-      "Advised by Professor Vikram Ramaswamy (https://www.cs.princeton.edu/~vr23/)"
+      "Advised by Professor Vikram Ramaswamy (https://www.cs.princeton.edu/~vr23/)",
+      "Investigated fairness and interpretability of transformer-based diffusion models",
+      "Designing a reward model based reinforcement learning pipeline that penalizes biased image generations"
     ],
-    skills: ["Machine Learning", "Fairness", "Interpretability", "Computer Vision", "Research"],
+    skills: ["Machine Learning", "Fairness", "Interpretability", "Diffusion Models", "Reinforcement Learning", "Computer Vision", "Research"],
     type: "research",
     section: "research"
   },

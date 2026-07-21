@@ -18,7 +18,7 @@ function Projects({ projects }) {
             <div className="project-links">
               {project.website && (
                 <a href={project.website} target="_blank" rel="noopener noreferrer" className="project-link">
-                  {project.id === 1 ? 'Play the game →' : 'Visit site →'}
+                  {project.id === 1 ? 'Play the game →' : project.id === 4 ? 'View demo →' : 'Visit site →'}
                 </a>
               )}
               {project.website && project.github && <span className="link-divider">|</span>}

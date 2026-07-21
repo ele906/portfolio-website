@@ -4,7 +4,7 @@ function Hobbies() {
   const hobbies = [
     {
       title: "Goose Enthusiast 🪿",
-      description: "I have a genuine love for geese! Whether it's observing their behavior, learning about migration patterns, or just spending time with them, geese never fail to fascinate me. Fun fact: My project 'Honkonomics' was inspired by my interest in understanding flock dynamics!",
+      description: "I have a genuine love for geese! Whether it's observing their behavior, learning about migration patterns, or just spending time with them, geese never fail to fascinate me. In fact, my GooseGame project was inspired by my love for geese!",
       images: [
         "/portfolio-website/images/geese1.jpg",
         "/portfolio-website/images/geese2.jpg",

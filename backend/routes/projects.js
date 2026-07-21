@@ -6,8 +6,8 @@ const router = express.Router()
 const projects = [
   {
     id: 1,
-    title: "Honkonomics: Goose Flock Simulation",
-    description: "Interactive web application simulating predator-prey dynamics using Python and Kivy framework. Implemented stochastic simulations using probabilistic methods to model environmental effects on flock behavior.",
+    title: "Goose Flock Simulation",
+    description: "Interactive web application simulating predator-prey dynamics using Python and Node.js framework. Implemented stochastic simulations using probabilistic methods to model environmental effects on flock behavior.",
     technologies: ["Python", "Web Development", "Stochastic Simulation"],
     website: "https://ele906.github.io/GooseGame/",
     github: "https://github.com/ele906/GooseGame",
@@ -30,6 +30,15 @@ const projects = [
     description: "RESTful API built with React and Flask/Python backend with 15+ endpoints covering song recommendations, search, user profiles, and a friend system. Features a personalized recommendation algorithm (4.7/5 user satisfaction), Google OAuth + JWT authentication, and a PostgreSQL schema across 10 tables.",
     technologies: ["Python", "Flask", "React", "PostgreSQL", "JWT", "Google OAuth"],
     date: "Jan 2026 - May 2026",
+    featured: true
+  },
+  {
+    id: 4,
+    title: "ReNO: Fairness-Aware Reward Noise Optimization",
+    description: "Interactive demo steering a one-step diffusion model (SDXL-Turbo) via reward-based noise optimization. Built a fairness-regularized objective and measurement pipeline to track demographic drift in occupation prompts across optimization steps.",
+    technologies: ["Diffusion Models", "PyTorch", "Reinforcement Learning", "Fairness", "Data Visualization"],
+    website: "https://ele906.github.io/debiasing/ReNO/demo/reno_demo.html",
+    date: "Apr. 2026 - Present",
     featured: true
   }
 ]

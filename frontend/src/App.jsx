@@ -80,9 +80,9 @@ function getLocalProjects() {
     },
     {
       id: 1,
-      title: "Honkonomics: Goose Flock Simulation",
-      description: "Interactive web application simulating predator-prey dynamics using Python and Kivy framework. Implemented stochastic simulations using probabilistic methods to model environmental effects on flock behavior.",
-      technologies: ["Python", "Web Development", "Stochastic Simulation"],
+      title: "Goose Flock Simulation Game",
+      description: "Interactive web application simulating predator-prey dynamics with a Python backend and Node.js frontend. Implemented stochastic simulations using probabilistic methods to model environmental effects on flock behavior.",
+      technologies: ["Python", 'Node.js', "Web Development", "Stochastic Simulation"],
       website: "https://ele906.github.io/GooseGame/",
       github: "https://github.com/ele906/GooseGame",
       date: "June 2025 - Aug 2025"
@@ -95,6 +95,14 @@ function getLocalProjects() {
       website: "https://ele906.github.io/portfolio-website/",
       github: "https://github.com/ele906/portfolio-website",
       date: "Sept 2024 - Dec 2024"
+    },
+    {
+      id: 4,
+      title: "ReNO: Fairness-Aware Reward Noise Optimization",
+      description: "Interactive demo steering a one-step diffusion model (SDXL-Turbo) via reward-based noise optimization. Built a fairness-regularized objective and measurement pipeline to track demographic drift in occupation prompts across optimization steps.",
+      technologies: ["Diffusion Models", "PyTorch", "Reinforcement Learning", "Fairness", "Data Visualization"],
+      website: "https://ele906.github.io/debiasing/ReNO/demo/reno_demo.html",
+      date: "Apr. 2026 - Present"
     }
   ]
 }
@@ -120,10 +128,11 @@ function getLocalExperiences() {
       title: "Independent Research",
       company: "Princeton University",
       location: "Princeton, NJ",
-      date: "May 2026 - Present",
+      date: "Apr. 2026 - Present",
       description: [
-        "Researching fairness and interpretability of machine learning systems, and how it applies to visual systems",
-        "Advised by Professor Vikram Ramaswamy"
+        "Advised by Professor Vikram Ramaswamy",
+        "Investigated fairness and interpretability of transformer-based diffusion models",
+        "Designing a reward model based reinforcement learning pipeline that penalizes biased image generations"
       ],
       section: "research"
     },
