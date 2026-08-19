@@ -29,6 +29,8 @@ const projects = [
     title: "Hooked — Music Discovery App",
     description: "RESTful API built with React and Flask/Python backend with 15+ endpoints covering song recommendations, search, user profiles, and a friend system. Features a personalized recommendation algorithm (4.7/5 user satisfaction), Google OAuth + JWT authentication, and a PostgreSQL schema across 10 tables.",
     technologies: ["Python", "Flask", "React", "PostgreSQL", "JWT", "Google OAuth"],
+    website: "https://hooked-e36.onrender.com",
+    github: "https://github.com/ele906/hooked",
     date: "Jan 2026 - May 2026",
     featured: true
   },

@@ -76,6 +76,8 @@ function getLocalProjects() {
       title: "Hooked — Music Discovery App",
       description: "RESTful API built with React and Flask/Python backend with 15+ endpoints covering song recommendations, search, user profiles, and a friend system. Features a personalized recommendation algorithm (4.7/5 user satisfaction), Google OAuth + JWT authentication, and a PostgreSQL schema across 10 tables.",
       technologies: ["Python", "Flask", "React", "PostgreSQL", "JWT", "Google OAuth"],
+      website: "https://hooked-e36.onrender.com",
+      github: "https://github.com/ele906/hooked",
       date: "Jan 2026 - May 2026"
     },
     {
@@ -114,7 +116,7 @@ function getLocalExperiences() {
       title: "Backend Engineering Intern",
       company: "NimbleRx (Y Combinator 2015)",
       location: "Redwood City, CA",
-      date: "May 2026 - Aug 2026",
+      date: "May 2026 - June 2026",
       description: [
         "Built barcode scanner feature in Java to retrieve data from FatSecretAPI; integrated into Flutter mobile frontend",
         "Wrote unit and functional tests across multiple service classes, improving code coverage before deployment",
@@ -122,6 +124,19 @@ function getLocalExperiences() {
         "Deployed backend services via CI/CD pipelines"
       ],
       section: "swe"
+    },
+    {
+      id: 7,
+      title: "Consulting Intern",
+      company: "Qvest",
+      location: "New York, NY",
+      date: "June 2026 - Aug 2026",
+      description: [
+        "Created an AI use case catalog with 12 tutorials; designed Gemini Skills for the company",
+        "Developed an AppScript Documentation Catalog to ensure scripts are up-to-date and maintained regularly",
+        "Conducted fit-gap analysis and vendor due diligence across 35 Accounts Payable platforms; built a weighted decision matrix to score vendors on fit and cost estimation"
+      ],
+      section: "other"
     },
     {
       id: 6,

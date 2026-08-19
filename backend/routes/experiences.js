@@ -9,7 +9,7 @@ const experiences = [
     title: "Backend Engineering Intern",
     company: "NimbleRx (Y Combinator 2015)",
     location: "Redwood City, CA",
-    date: "May 2026 - Aug 2026",
+    date: "May 2026 - June 2026",
     description: [
       "Built barcode scanner feature in Java to retrieve data from FatSecretAPI; integrated into Flutter mobile frontend",
       "Wrote unit and functional tests across multiple service classes, improving code coverage before deployment",
@@ -19,6 +19,21 @@ const experiences = [
     skills: ["Java", "Flutter", "PostgreSQL", "REST APIs", "CI/CD", "Testing"],
     type: "internship",
     section: "swe"
+  },
+  {
+    id: 7,
+    title: "Consulting Intern",
+    company: "Qvest",
+    location: "New York, NY",
+    date: "June 2026 - Aug 2026",
+    description: [
+      "Created an AI use case catalog with 12 tutorials; designed Gemini Skills for the company",
+      "Developed an AppScript Documentation Catalog to ensure scripts are up-to-date and maintained regularly",
+      "Conducted fit-gap analysis and vendor due diligence across 35 Accounts Payable platforms; built a weighted decision matrix to score vendors on fit and cost estimation"
+    ],
+    skills: ["Consulting", "AI Strategy", "Google AppScript", "Vendor Due Diligence", "Data Analysis"],
+    type: "internship",
+    section: "other"
   },
   {
     id: 6,

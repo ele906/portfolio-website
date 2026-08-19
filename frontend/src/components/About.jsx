@@ -31,10 +31,10 @@ function About() {
               Hi, I'm Eleanor Liu! I'm a CS student at Princeton with a minor in Stats & ML, currently in my junior year.
             </p>
             <p>
-              I like building things with code, including full-stack apps, data pipelines, ML systems. This summer I'm at NimbleRx working on backend infrastructure, and I've done stints at MacDermid Alpha (computer vision for particle detection) and Hydrogen in Motion (database recovery from scratch).
+              I like building things with code, including full-stack apps, data pipelines, ML systems. This summer I worked at NimbleRx on backend infrastructure, and I've done internships at MacDermid Alpha (computer vision for particle detection) and Hydrogen in Motion (database restruction).
             </p>
             <p>
-              Outside of code I'm into astronomy, geography, and most importantly, geese! (Please scroll down to <a href="#goose-game" onClick={scrollToGooseGame}>play my goose game</a> :D)
+              Outside of code I'm into astronomyy and geese! (Please scroll down to <a href="#goose-game" onClick={scrollToGooseGame}>play my goose game</a> :D)
             </p>
           </div>
         </div>
