@@ -105,7 +105,7 @@ const experiences = [
     description: [
       "Teaching Assistant for Intro to Computer Science (COS126), General Physics II (PHY110), Circuits (ECE203)",
       "Help students understand fundamental programming concepts and problem-solving techniques",
-      "Hold office hours and grade assignments for classes of 200+ students"
+      "Grade assignments and hold office hours for classes of 200+ students"
     ],
     skills: ["Teaching", "Computer Science", "Physics", "Electrical Engineering", "Communication"],
     type: "teaching",
