@@ -88,23 +88,6 @@ function getLocalProjects() {
       website: "https://ele906.github.io/GooseGame/",
       github: "https://github.com/ele906/GooseGame",
       date: "June 2025 - Aug 2025"
-    },
-    {
-      id: 2,
-      title: "Personal Portfolio Website",
-      description: "Full-stack web application with React frontend and Node.js backend, implementing REST API architecture for data management.",
-      technologies: ["React", "Node.js", "REST APIs", "Express"],
-      website: "https://ele906.github.io/portfolio-website/",
-      github: "https://github.com/ele906/portfolio-website",
-      date: "Sept 2024 - Dec 2024"
-    },
-    {
-      id: 4,
-      title: "ReNO: Fairness-Aware Reward Noise Optimization",
-      description: "Interactive demo steering a one-step diffusion model (SDXL-Turbo) via reward-based noise optimization. Built a fairness-regularized objective and measurement pipeline to track demographic drift in occupation prompts across optimization steps.",
-      technologies: ["Diffusion Models", "PyTorch", "Reinforcement Learning", "Fairness", "Data Visualization"],
-      website: "https://ele906.github.io/debiasing/ReNO/demo/reno_demo.html",
-      date: "Apr. 2026 - Present"
     }
   ]
 }
@@ -118,10 +101,24 @@ function getLocalExperiences() {
       location: "Redwood City, CA",
       date: "May 2026 - June 2026",
       description: [
-        "Built barcode scanner feature in Java to retrieve data from FatSecretAPI; integrated into Flutter mobile frontend",
-        "Wrote unit and functional tests across multiple service classes, improving code coverage before deployment",
-        "Resolved production bug across the backend, including issues in PostgreSQL queries and REST API request handling",
-        "Deployed backend services via CI/CD pipelines"
+        "Led projects from engineering designs to end-to-end testing, delivering features to 16M users",
+        "Deployed an end-to-end medication reminder system with scheduling backend and push notifications",
+        "Built a LLM-based prescription parser achieving 99% accuracy, 80% cost reduction, and 10x lower latency",
+        "Leveraged Claude Code to accelerate development, using agentic AI workflows to iterate across the stack",
+        "Deployed features to production through CI/CD pipelines and monitored performance through Kibana"
+      ],
+      section: "swe"
+    },
+    {
+      id: 8,
+      title: "Founding Software Engineer",
+      company: "Oasia",
+      location: "San Francisco, CA",
+      date: "June 2026 - Present",
+      description: [
+        "Owned backend architecture, including Express middleware pipeline and PostgreSQL schema",
+        "Designed a narrative-driven AI companion with persona state that progresses alongside user habit growth",
+        "Built a crisis detection middleware on every chat request, routing flagged messages to resources"
       ],
       section: "swe"
     },
@@ -147,8 +144,10 @@ function getLocalExperiences() {
       description: [
         "Advised by Professor Vikram Ramaswamy",
         "Investigated fairness and interpretability of transformer-based diffusion models",
-        "Designing a reward model based reinforcement learning pipeline that penalizes biased image generations"
+        "Designing a reward model based reinforcement learning pipeline that penalizes biased image generations",
+        "Built ReNO, an interactive demo steering a one-step diffusion model (SDXL-Turbo) via reward-based noise optimization, with a fairness-regularized objective and measurement pipeline to track demographic drift in occupation prompts"
       ],
+      website: "https://ele906.github.io/debiasing/ReNO/demo/reno_demo.html",
       section: "research"
     },
     {
@@ -160,6 +159,7 @@ function getLocalExperiences() {
       description: [
         "Developed full-stack application with Python backend and frontend dashboard, integrating TensorFlow and OpenCV for particle detection with 95% accuracy",
         "Built automated monitoring system on ESP32 microcontroller with real-time dashboard for process tracking",
+        "Developed data pipelines to process and clean large datasets from real-time monitoring systems",
         "Participated in code reviews and Agile/Scrum development practices, working effectively with cross-functional teams",
         "Deployed application as standalone executable across three research centers"
       ],

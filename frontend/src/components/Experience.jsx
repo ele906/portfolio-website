@@ -15,6 +15,13 @@ function Experience({ experiences, title, id }) {
                 <li key={idx}>{item}</li>
               ))}
             </ul>
+            {exp.website && (
+              <div className="project-links">
+                <a href={exp.website} target="_blank" rel="noopener noreferrer" className="project-link">
+                  View demo →
+                </a>
+              </div>
+            )}
           </div>
         ))}
       </div>

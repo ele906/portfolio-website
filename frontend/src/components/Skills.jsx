@@ -3,28 +3,24 @@ import React from 'react'
 function Skills() {
   const skillCategories = [
     {
-      category: "Programming Languages",
-      skills: ["Python", "Java", "C", "JavaScript", "TypeScript", "SQL", "HTML/CSS"]
+      category: "Software",
+      skills: ["RESTful APIs", "AWS", "Docker", "Agile/Scrum", "Git", "CI/CD Pipelines", "End-To-End Tests"]
     },
     {
-      category: "Frontend Development",
-      skills: ["React", "Next.js", "Tailwind CSS", "Vite"]
+      category: "Backend",
+      skills: ["Java", "Python", "Node.js", "Flask", "Spring Boot", "Mockito", "Server-Side", "Database", "SQL", "PostgreSQL"]
     },
     {
-      category: "Backend Development",
-      skills: ["Node.js", "Express", "REST APIs", "Data Pipelines"]
+      category: "Frontend",
+      skills: ["React", "JavaScript", "TypeScript", "Next.js", "CSS/HTML", "Tailwind CSS", "Webpack", "UI/UX"]
     },
     {
-      category: "Databases",
-      skills: ["SQL", "MongoDB", "PostgreSQL"]
+      category: "Machine Learning",
+      skills: ["PyTorch", "Transformer Architecture", "Recommendation Systems", "Hugging Face Transformers", "Embeddings", "Diffusion Models", "Reinforcement Learning", "Computer Vision", "Generative AI"]
     },
     {
-      category: "Tools & Methodologies",
-      skills: ["Git", "Docker", "AWS", "Agile/Scrum", "CI/CD", "Code Reviews"]
-    },
-    {
-      category: "AI/ML",
-      skills: ["TensorFlow", "OpenCV", "NumPy", "Matplotlib", "scikit-learn"]
+      category: "AI Tools",
+      skills: ["Claude Code", "Codex", "Large Language Models", "Agentic AI Systems", "RAG Systems"]
     }
   ]
 

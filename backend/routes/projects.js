@@ -15,16 +15,6 @@ const projects = [
     featured: true
   },
   {
-    id: 2,
-    title: "Personal Portfolio Website",
-    description: "Full-stack web application with React frontend and Node.js backend, implementing REST API architecture for data management. Demonstrates proficiency in modern web development practices and design patterns.",
-    technologies: ["React", "Node.js", "MongoDB", "REST APIs", "Express"],
-    website: "https://ele906.github.io/portfolio-website/",
-    github: "https://github.com/ele906/portfolio-website",
-    date: "Sept 2024 - Dec 2024",
-    featured: true
-  },
-  {
     id: 3,
     title: "Hooked — Music Discovery App",
     description: "RESTful API built with React and Flask/Python backend with 15+ endpoints covering song recommendations, search, user profiles, and a friend system. Features a personalized recommendation algorithm (4.7/5 user satisfaction), Google OAuth + JWT authentication, and a PostgreSQL schema across 10 tables.",
@@ -32,15 +22,6 @@ const projects = [
     website: "https://hooked-e36.onrender.com",
     github: "https://github.com/ele906/hooked",
     date: "Jan 2026 - May 2026",
-    featured: true
-  },
-  {
-    id: 4,
-    title: "ReNO: Fairness-Aware Reward Noise Optimization",
-    description: "Interactive demo steering a one-step diffusion model (SDXL-Turbo) via reward-based noise optimization. Built a fairness-regularized objective and measurement pipeline to track demographic drift in occupation prompts across optimization steps.",
-    technologies: ["Diffusion Models", "PyTorch", "Reinforcement Learning", "Fairness", "Data Visualization"],
-    website: "https://ele906.github.io/debiasing/ReNO/demo/reno_demo.html",
-    date: "Apr. 2026 - Present",
     featured: true
   }
 ]

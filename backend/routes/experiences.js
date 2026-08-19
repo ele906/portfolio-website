@@ -11,13 +11,29 @@ const experiences = [
     location: "Redwood City, CA",
     date: "May 2026 - June 2026",
     description: [
-      "Built barcode scanner feature in Java to retrieve data from FatSecretAPI; integrated into Flutter mobile frontend",
-      "Wrote unit and functional tests across multiple service classes, improving code coverage before deployment",
-      "Resolved production bug across the backend, including issues in PostgreSQL queries and REST API request handling",
-      "Deployed backend services via CI/CD pipelines"
+      "Led projects from engineering designs to end-to-end testing, delivering features to 16M users",
+      "Deployed an end-to-end medication reminder system with scheduling backend and push notifications",
+      "Built a LLM-based prescription parser achieving 99% accuracy, 80% cost reduction, and 10x lower latency",
+      "Leveraged Claude Code to accelerate development, using agentic AI workflows to iterate across the stack",
+      "Deployed features to production through CI/CD pipelines and monitored performance through Kibana"
     ],
-    skills: ["Java", "Flutter", "PostgreSQL", "REST APIs", "CI/CD", "Testing"],
+    skills: ["Java", "Flutter", "LLMs", "CI/CD", "Kibana", "Agentic AI Workflows"],
     type: "internship",
+    section: "swe"
+  },
+  {
+    id: 8,
+    title: "Founding Software Engineer",
+    company: "Oasia",
+    location: "San Francisco, CA",
+    date: "June 2026 - Present",
+    description: [
+      "Owned backend architecture, including Express middleware pipeline and PostgreSQL schema",
+      "Designed a narrative-driven AI companion with persona state that progresses alongside user habit growth",
+      "Built a crisis detection middleware on every chat request, routing flagged messages to resources"
+    ],
+    skills: ["Express", "PostgreSQL", "System Design", "AI Product Design"],
+    type: "startup",
     section: "swe"
   },
   {
@@ -44,21 +60,24 @@ const experiences = [
     description: [
       "Advised by Professor Vikram Ramaswamy (https://www.cs.princeton.edu/~vr23/)",
       "Investigated fairness and interpretability of transformer-based diffusion models",
-      "Designing a reward model based reinforcement learning pipeline that penalizes biased image generations"
+      "Designing a reward model based reinforcement learning pipeline that penalizes biased image generations",
+      "Built ReNO, an interactive demo steering a one-step diffusion model (SDXL-Turbo) via reward-based noise optimization, with a fairness-regularized objective and measurement pipeline to track demographic drift in occupation prompts"
     ],
+    website: "https://ele906.github.io/debiasing/ReNO/demo/reno_demo.html",
     skills: ["Machine Learning", "Fairness", "Interpretability", "Diffusion Models", "Reinforcement Learning", "Computer Vision", "Research"],
     type: "research",
     section: "research"
   },
   {
     id: 1,
-    title: "Software Engineering Intern",
+    title: "Engineering Intern",
     company: "MacDermid Alpha Electronic Solutions",
     location: "Piscataway, NJ",
     date: "May 2025 - Aug 2025",
     description: [
       "Developed full-stack application with Python backend and frontend dashboard, integrating TensorFlow and OpenCV for particle detection with 95% accuracy",
       "Built automated monitoring system on ESP32 microcontroller with real-time dashboard for process tracking",
+      "Developed data pipelines to process and clean large datasets from real-time monitoring systems",
       "Participated in code reviews and Agile/Scrum development practices, working effectively with cross-functional teams",
       "Deployed application as standalone executable across three research centers"
     ],
