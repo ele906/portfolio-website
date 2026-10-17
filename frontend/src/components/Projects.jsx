@@ -9,7 +9,15 @@ function Projects({ projects }) {
           <div key={project.id} id={project.id === 1 ? 'goose-game' : undefined} className="project-card">
             <h3>{project.title}</h3>
             <p className="date">{project.date}</p>
-            <p>{project.description}</p>
+            {Array.isArray(project.description) ? (
+              <ul>
+                {project.description.map((item, idx) => (
+                  <li key={idx}>{item}</li>
+                ))}
+              </ul>
+            ) : (
+              <p>{project.description}</p>
+            )}
             <div className="tech-stack">
               {project.technologies.map((tech, idx) => (
                 <span key={idx} className="tech-tag">{tech}</span>

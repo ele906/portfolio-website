@@ -5,6 +5,21 @@ const router = express.Router()
 // In-memory data store
 const experiences = [
   {
+    id: 8,
+    title: "Software Engineer",
+    company: "Oasia",
+    location: "San Francisco, CA",
+    date: "June 2026 - Present",
+    description: [
+      "Owned backend architecture, including Express middleware pipeline and PostgreSQL schema",
+      "Designed a narrative-driven AI companion with persona state that progresses alongside user habit growth",
+      "Built a crisis detection middleware on every chat request, routing flagged messages to resources"
+    ],
+    skills: ["Express", "PostgreSQL", "System Design", "AI Product Design"],
+    type: "startup",
+    section: "swe"
+  },
+  {
     id: 5,
     title: "Backend Engineering Intern",
     company: "NimbleRx (Y Combinator 2015)",
@@ -22,19 +37,59 @@ const experiences = [
     section: "swe"
   },
   {
-    id: 8,
-    title: "Founding Software Engineer",
-    company: "Oasia",
-    location: "San Francisco, CA",
-    date: "June 2026 - Present",
+    id: 1,
+    title: "Engineering Intern",
+    company: "MacDermid Alpha Electronic Solutions",
+    location: "Piscataway, NJ",
+    date: "May 2025 - Aug 2025",
     description: [
-      "Owned backend architecture, including Express middleware pipeline and PostgreSQL schema",
-      "Designed a narrative-driven AI companion with persona state that progresses alongside user habit growth",
-      "Built a crisis detection middleware on every chat request, routing flagged messages to resources"
+      {
+        text: "Developed full-stack application with Python backend and frontend dashboard, integrating TensorFlow and OpenCV for particle detection with 95% accuracy; deployed application as standalone executable across three research centers",
+        linkText: "Read more →",
+        linkHref: "#particle-detection"
+      },
+      "Created a data analysis pipeline, processing real-time sensor data to detect reaction endpoints and anomalies",
+      "Built automated monitoring system on ESP32 microcontroller with real-time dashboard for process tracking",
+      "Developed data pipelines to process and clean large datasets from real-time monitoring systems"
     ],
-    skills: ["Express", "PostgreSQL", "System Design", "AI Product Design"],
-    type: "startup",
+    skills: ["Python", "TensorFlow", "OpenCV", "Full-Stack Development", "Agile", "Code Reviews"],
+    type: "internship",
     section: "swe"
+  },
+  {
+    id: 6,
+    title: "Independent Research — Debiasing Diffusion Models with SAEs",
+    company: "Princeton University",
+    location: "Princeton, NJ",
+    date: "Apr. 2026 - Present",
+    description: [
+      "Advised by Professor Vikram Ramaswamy (https://www.cs.princeton.edu/~vr23/)",
+      "Tuning sparse autoencoders (SAEs) to study interpretable features in diffusion models",
+      "Investigating SAE-based feature steering to reduce bias in generated images",
+      "Developing demo notebooks to explore SAE features and debiasing interventions"
+    ],
+    website: "https://ele906.github.io/sae-demo-notebooks/",
+    github: "https://github.com/ele906/cos398",
+    skills: ["Sparse Autoencoders", "Diffusion Models", "Mechanistic Interpretability", "Fairness", "Machine Learning", "Research"],
+    type: "research",
+    section: "research"
+  },
+  {
+    id: 9,
+    anchorId: "particle-detection",
+    title: "Particle Detection System",
+    company: "MacDermid Alpha Electronic Solutions",
+    location: "Piscataway, NJ",
+    date: "May 2025 - Aug 2025",
+    description: [
+      "Developed a machine learning model using PyTorch and OpenCV to detect and measure particles",
+      "Fine-tuned StarDist model to achieve 95% accuracy, reducing analysis time from hours to 15 seconds",
+      "Measured per-particle attributes—size, eccentricity, and inter-particle spacing—to characterize each detected particle",
+      "Designed a similarity scoring system using Earth Mover's Distance to compare particles based on these measurements"
+    ],
+    skills: ["PyTorch", "OpenCV", "StarDist", "Computer Vision", "Data Analysis"],
+    type: "internship",
+    section: "research"
   },
   {
     id: 7,
@@ -52,38 +107,19 @@ const experiences = [
     section: "other"
   },
   {
-    id: 6,
-    title: "Independent Research",
+    id: 4,
+    title: "Teaching Assistant",
     company: "Princeton University",
     location: "Princeton, NJ",
-    date: "Apr. 2026 - Present",
+    date: "Sept 2024 - Present",
     description: [
-      "Advised by Professor Vikram Ramaswamy (https://www.cs.princeton.edu/~vr23/)",
-      "Investigated fairness and interpretability of transformer-based diffusion models",
-      "Designing a reward model based reinforcement learning pipeline that penalizes biased image generations",
-      "Built ReNO, an interactive demo steering a one-step diffusion model (SDXL-Turbo) via reward-based noise optimization, with a fairness-regularized objective and measurement pipeline to track demographic drift in occupation prompts"
+      "Teaching Assistant for Intro to Computer Science (COS126), General Physics II (PHY110), Circuits (ECE203)",
+      "Help students understand fundamental programming concepts and problem-solving techniques",
+      "Grade assignments and hold office hours for classes of 200+ students"
     ],
-    website: "https://ele906.github.io/debiasing/ReNO/demo/reno_demo.html",
-    skills: ["Machine Learning", "Fairness", "Interpretability", "Diffusion Models", "Reinforcement Learning", "Computer Vision", "Research"],
-    type: "research",
-    section: "research"
-  },
-  {
-    id: 1,
-    title: "Engineering Intern",
-    company: "MacDermid Alpha Electronic Solutions",
-    location: "Piscataway, NJ",
-    date: "May 2025 - Aug 2025",
-    description: [
-      "Developed full-stack application with Python backend and frontend dashboard, integrating TensorFlow and OpenCV for particle detection with 95% accuracy",
-      "Built automated monitoring system on ESP32 microcontroller with real-time dashboard for process tracking",
-      "Developed data pipelines to process and clean large datasets from real-time monitoring systems",
-      "Participated in code reviews and Agile/Scrum development practices, working effectively with cross-functional teams",
-      "Deployed application as standalone executable across three research centers"
-    ],
-    skills: ["Python", "TensorFlow", "OpenCV", "Full-Stack Development", "Agile", "Code Reviews"],
-    type: "internship",
-    section: "swe"
+    skills: ["Teaching", "Computer Science", "Physics", "Electrical Engineering", "Communication"],
+    type: "teaching",
+    section: "other"
   },
   {
     id: 2,
@@ -114,21 +150,6 @@ const experiences = [
     skills: ["Python", "NumPy", "Matplotlib", "Data Analysis", "Research"],
     type: "research",
     section: "other"
-  },
-  {
-    id: 4,
-    title: "Teaching Assistant",
-    company: "Princeton University",
-    location: "Princeton, NJ",
-    date: "Sept 2024 - Present",
-    description: [
-      "Teaching Assistant for Intro to Computer Science (COS126), General Physics II (PHY110), Circuits (ECE203)",
-      "Help students understand fundamental programming concepts and problem-solving techniques",
-      "Grade assignments and hold office hours for classes of 200+ students"
-    ],
-    skills: ["Teaching", "Computer Science", "Physics", "Electrical Engineering", "Communication"],
-    type: "teaching",
-    section: "other"
   }
 ]
 
@@ -136,12 +157,12 @@ const experiences = [
 router.get('/', (req, res) => {
   try {
     const { type } = req.query
-    
+
     if (type) {
       const filteredExperiences = experiences.filter(e => e.type === type)
       return res.json(filteredExperiences)
     }
-    
+
     res.json(experiences)
   } catch (error) {
     res.status(500).json({ error: 'Failed to fetch experiences' })
@@ -152,11 +173,11 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
   try {
     const experience = experiences.find(e => e.id === parseInt(req.params.id))
-    
+
     if (!experience) {
       return res.status(404).json({ error: 'Experience not found' })
     }
-    
+
     res.json(experience)
   } catch (error) {
     res.status(500).json({ error: 'Failed to fetch experience' })
@@ -170,7 +191,7 @@ router.post('/', (req, res) => {
       id: experiences.length + 1,
       ...req.body
     }
-    
+
     experiences.push(newExperience)
     res.status(201).json(newExperience)
   } catch (error) {

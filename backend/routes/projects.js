@@ -17,11 +17,16 @@ const projects = [
   {
     id: 3,
     title: "Hooked — Music Discovery App",
-    description: "RESTful API built with React and Flask/Python backend with 15+ endpoints covering song recommendations, search, user profiles, and a friend system. Features a personalized recommendation algorithm (4.7/5 user satisfaction), Google OAuth + JWT authentication, and a PostgreSQL schema across 10 tables.",
-    technologies: ["Python", "Flask", "React", "PostgreSQL", "JWT", "Google OAuth"],
+    description: [
+      "Designed a tiered recommendation system using neural collaborative filtering (NeuMF) with a genre-based cold-start fallback and epsilon-greedy exploration to personalize song recommendations",
+      "Built and trained a decoder-only transformer from scratch for genre-conditioned song title generation",
+      "Integrated a pretrained generative transformer (MusicGen) to produce music conditioned on user taste",
+      "Built the React frontend for users to explore recommendations and generated tracks end-to-end"
+    ],
+    technologies: ["Python", "PyTorch", "Flask", "React", "PostgreSQL", "JWT", "Google OAuth"],
     website: "https://hooked-e36.onrender.com",
     github: "https://github.com/ele906/hooked",
-    date: "Jan 2026 - May 2026",
+    date: "May 2026 - Present",
     featured: true
   }
 ]

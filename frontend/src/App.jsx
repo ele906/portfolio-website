@@ -74,11 +74,16 @@ function getLocalProjects() {
     {
       id: 3,
       title: "Hooked — Music Discovery App",
-      description: "RESTful API built with React and Flask/Python backend with 15+ endpoints covering song recommendations, search, user profiles, and a friend system. Features a personalized recommendation algorithm (4.7/5 user satisfaction), Google OAuth + JWT authentication, and a PostgreSQL schema across 10 tables.",
-      technologies: ["Python", "Flask", "React", "PostgreSQL", "JWT", "Google OAuth"],
+      description: [
+        "Designed a tiered recommendation system using neural collaborative filtering (NeuMF) with a genre-based cold-start fallback and epsilon-greedy exploration to personalize song recommendations",
+        "Built and trained a decoder-only transformer from scratch for genre-conditioned song title generation",
+        "Integrated a pretrained generative transformer (MusicGen) to produce music conditioned on user taste",
+        "Built the React frontend for users to explore recommendations and generated tracks end-to-end"
+      ],
+      technologies: ["Python", "PyTorch", "Flask", "React", "PostgreSQL", "JWT", "Google OAuth"],
       website: "https://hooked-e36.onrender.com",
       github: "https://github.com/ele906/hooked",
-      date: "Jan 2026 - May 2026"
+      date: "May 2026 - Present"
     },
     {
       id: 1,
@@ -95,6 +100,20 @@ function getLocalProjects() {
 function getLocalExperiences() {
   return [
     {
+      id: 8,
+      title: "Software Engineer",
+      company: "Oasia",
+      location: "San Francisco, CA",
+      date: "June 2026 - Present",
+      description: [
+        "Owned backend architecture, including Express middleware pipeline and PostgreSQL schema",
+        "Designed a narrative-driven AI companion with persona state that progresses alongside user habit growth",
+        "Built a crisis detection middleware on every chat request, routing flagged messages to resources"
+      ],
+      skills: ["Express", "PostgreSQL", "System Design", "AI Product Design"],
+      section: "swe"
+    },
+    {
       id: 5,
       title: "Backend Engineering Intern",
       company: "NimbleRx (Y Combinator 2015)",
@@ -107,20 +126,60 @@ function getLocalExperiences() {
         "Leveraged Claude Code to accelerate development, using agentic AI workflows to iterate across the stack",
         "Deployed features to production through CI/CD pipelines and monitored performance through Kibana"
       ],
+      skills: ["Java", "Flutter", "LLMs", "CI/CD", "Kibana", "Agentic AI Workflows"],
       section: "swe"
     },
     {
-      id: 8,
-      title: "Founding Software Engineer",
-      company: "Oasia",
-      location: "San Francisco, CA",
-      date: "June 2026 - Present",
+      id: 1,
+      title: "Engineering Intern",
+      company: "MacDermid Alpha Electronic Solutions",
+      location: "Piscataway, NJ",
+      date: "May 2025 - Aug 2025",
       description: [
-        "Owned backend architecture, including Express middleware pipeline and PostgreSQL schema",
-        "Designed a narrative-driven AI companion with persona state that progresses alongside user habit growth",
-        "Built a crisis detection middleware on every chat request, routing flagged messages to resources"
+        {
+          text: "Developed full-stack application with Python backend and frontend dashboard, integrating TensorFlow and OpenCV for particle detection with 95% accuracy; deployed application as standalone executable across three research centers",
+          linkText: "Read more →",
+          linkHref: "#particle-detection"
+        },
+        "Created a data analysis pipeline, processing real-time sensor data to detect reaction endpoints and anomalies",
+        "Built automated monitoring system on ESP32 microcontroller with real-time dashboard for process tracking",
+        "Developed data pipelines to process and clean large datasets from real-time monitoring systems"
       ],
+      skills: ["Python", "TensorFlow", "OpenCV", "Full-Stack Development", "Agile", "Code Reviews"],
       section: "swe"
+    },
+    {
+      id: 6,
+      title: "Independent Research — Debiasing Diffusion Models with SAEs",
+      company: "Princeton University",
+      location: "Princeton, NJ",
+      date: "Apr. 2026 - Present",
+      description: [
+        "Advised by Professor Vikram Ramaswamy",
+          "Tuning sparse autoencoders (SAEs) to study interpretable features in diffusion models",
+        "Investigating SAE-based feature steering to reduce bias in generated images",
+        "Developing demo notebooks to explore SAE features and debiasing interventions"
+      ],
+      website: "https://ele906.github.io/sae-demo-notebooks/",
+      github: "https://github.com/ele906/cos398",
+      skills: ["Sparse Autoencoders", "Diffusion Models", "Mechanistic Interpretability", "Fairness", "Machine Learning", "Research"],
+      section: "research"
+    },
+    {
+      id: 9,
+      anchorId: "particle-detection",
+      title: "Particle Detection System",
+      company: "MacDermid Alpha Electronic Solutions",
+      location: "Piscataway, NJ",
+      date: "May 2025 - Aug 2025",
+      description: [
+        "Developed a machine learning model using PyTorch and OpenCV to detect and measure particles",
+        "Fine-tuned StarDist model to achieve 95% accuracy, reducing analysis time from hours to 15 seconds",
+        "Measured per-particle attributes—size, eccentricity, and inter-particle spacing—to characterize each detected particle",
+        "Designed a similarity scoring system using Earth Mover's Distance to compare particles based on these measurements"
+      ],
+      skills: ["PyTorch", "OpenCV", "StarDist", "Computer Vision", "Data Analysis"],
+      section: "research"
     },
     {
       id: 7,
@@ -133,62 +192,7 @@ function getLocalExperiences() {
         "Developed an AppScript Documentation Catalog to ensure scripts are up-to-date and maintained regularly",
         "Conducted fit-gap analysis and vendor due diligence across 35 Accounts Payable platforms; built a weighted decision matrix to score vendors on fit and cost estimation"
       ],
-      section: "other"
-    },
-    {
-      id: 6,
-      title: "Independent Research",
-      company: "Princeton University",
-      location: "Princeton, NJ",
-      date: "Apr. 2026 - Present",
-      description: [
-        "Advised by Professor Vikram Ramaswamy",
-        "Investigated fairness and interpretability of transformer-based diffusion models",
-        "Designing a reward model based reinforcement learning pipeline that penalizes biased image generations",
-        "Built ReNO, an interactive demo steering a one-step diffusion model (SDXL-Turbo) via reward-based noise optimization, with a fairness-regularized objective and measurement pipeline to track demographic drift in occupation prompts"
-      ],
-      website: "https://ele906.github.io/debiasing/ReNO/demo/reno_demo.html",
-      section: "research"
-    },
-    {
-      id: 1,
-      title: "Software Engineering Intern",
-      company: "MacDermid Alpha Electronic Solutions",
-      location: "Piscataway, NJ",
-      date: "May 2025 - Aug 2025",
-      description: [
-        "Developed full-stack application with Python backend and frontend dashboard, integrating TensorFlow and OpenCV for particle detection with 95% accuracy",
-        "Built automated monitoring system on ESP32 microcontroller with real-time dashboard for process tracking",
-        "Developed data pipelines to process and clean large datasets from real-time monitoring systems",
-        "Participated in code reviews and Agile/Scrum development practices, working effectively with cross-functional teams",
-        "Deployed application as standalone executable across three research centers"
-      ],
-      section: "swe"
-    },
-    {
-      id: 2,
-      title: "Engineering Intern",
-      company: "Hydrogen in Motion Inc.",
-      location: "Burnaby, BC",
-      date: "June 2024 - Aug 2024",
-      description: [
-        "Rebuilt corrupted SQL database with Python, implementing automated recovery scripts using regex and data pipelines",
-        "Developed data pipelines to process and clean large datasets from real-time monitoring systems",
-        "Debugged and resolved data inconsistencies in production database, collaborating with senior engineers"
-      ],
-      section: "other"
-    },
-    {
-      id: 3,
-      title: "Research Assistant",
-      company: "University of Victoria",
-      location: "Victoria, BC",
-      date: "Jan 2023 - Dec 2023",
-      description: [
-        "Processed 200 GB of simulation data in Python using NumPy and Matplotlib, generating 13,000 plots and 250 animations",
-        "Performed time-series analysis on simulation snapshots, contributing to peer-reviewed research paper",
-        "Collaborated with research team to understand project requirements and deliver analysis solutions"
-      ],
+      skills: ["Consulting", "AI Strategy", "Google AppScript", "Vendor Due Diligence", "Data Analysis"],
       section: "other"
     },
     {
@@ -202,6 +206,35 @@ function getLocalExperiences() {
         "Help students understand fundamental programming concepts and problem-solving techniques",
         "Hold office hours and grade assignments for classes of 200+ students"
       ],
+      skills: ["Teaching", "Computer Science", "Physics", "Electrical Engineering", "Communication"],
+      section: "other"
+    },
+    {
+      id: 2,
+      title: "Engineering Intern",
+      company: "Hydrogen in Motion Inc.",
+      location: "Burnaby, BC",
+      date: "June 2024 - Aug 2024",
+      description: [
+        "Rebuilt corrupted SQL database with Python, implementing automated recovery scripts using regex and data pipelines",
+        "Developed data pipelines to process and clean large datasets from real-time monitoring systems",
+        "Debugged and resolved data inconsistencies in production database, collaborating with senior engineers"
+      ],
+      skills: ["Python", "SQL", "Data Pipelines", "Database Management", "Problem Solving"],
+      section: "other"
+    },
+    {
+      id: 3,
+      title: "Research Assistant",
+      company: "University of Victoria",
+      location: "Victoria, BC",
+      date: "Jan 2023 - Dec 2023",
+      description: [
+        "Processed 200 GB of simulation data in Python using NumPy and Matplotlib, generating 13,000 plots and 250 animations",
+        "Performed time-series analysis on simulation snapshots, contributing to peer-reviewed research paper",
+        "Collaborated with research team to understand project requirements and deliver analysis solutions"
+      ],
+      skills: ["Python", "NumPy", "Matplotlib", "Data Analysis", "Research"],
       section: "other"
     }
   ]

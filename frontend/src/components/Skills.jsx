@@ -3,24 +3,32 @@ import React from 'react'
 function Skills() {
   const skillCategories = [
     {
-      category: "Software",
-      skills: ["RESTful APIs", "AWS", "Docker", "Agile/Scrum", "Git", "CI/CD Pipelines", "End-To-End Tests"]
-    },
-    {
       category: "Backend",
-      skills: ["Java", "Python", "Node.js", "Flask", "Spring Boot", "Mockito", "Server-Side", "Database", "SQL", "PostgreSQL"]
+      skills: ["Java", "Python", "Node.js", "Flask", "Server-Side", "Database", "SQL", "PostgreSQL"]
     },
     {
       category: "Frontend",
       skills: ["React", "JavaScript", "TypeScript", "Next.js", "CSS/HTML", "Tailwind CSS", "Webpack", "UI/UX"]
     },
     {
-      category: "Machine Learning",
-      skills: ["PyTorch", "Transformer Architecture", "Recommendation Systems", "Hugging Face Transformers", "Embeddings", "Diffusion Models", "Reinforcement Learning", "Computer Vision", "Generative AI"]
+      category: "Mobile",
+      skills: ["Kotlin", "Swift", "Spring Boot"]
+    },
+    {
+      category: "Software Engineering",
+      skills: ["RESTful APIs", "AWS", "Docker", "Agile/Scrum", "Git", "CI/CD Pipelines", "End-To-End Tests", "Testing", "Quality Assurance", "Mockito"]
     },
     {
       category: "AI Tools",
-      skills: ["Claude Code", "Codex", "Large Language Models", "Agentic AI Systems", "RAG Systems"]
+      skills: ["Claude Code", "Codex", "Large Language Models", "Agentic AI Systems", "RAG Systems", "AI API Integration"]
+    },
+    {
+      category: "Machine Learning",
+      skills: ["Machine Learning", "PyTorch", "Transformer Architecture", "Recommendation Systems", "Hugging Face Transformers", "Embeddings", "Diffusion Models", "Reinforcement Learning", "Computer Vision", "Generative AI"]
+    },
+    {
+      category: "Data Science",
+      skills: ["Statistical Modeling", "Monte Carlo Simulation", "Regression Analysis", "Causal Inference", "Data Analysis", "Probability & Statistics", "R", "Excel", "PowerPoint", "BigQuery", "Google AppScript"]
     }
   ]
 

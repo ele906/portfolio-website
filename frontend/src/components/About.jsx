@@ -34,7 +34,7 @@ function About() {
               I like building things with code, including full-stack apps, data pipelines, ML systems. This summer I worked at NimbleRx on backend infrastructure, and I've done internships at MacDermid Alpha (computer vision for particle detection) and Hydrogen in Motion (database restruction).
             </p>
             <p>
-              Outside of code I'm into astronomyy and geese! (Please scroll down to <a href="#goose-game" onClick={scrollToGooseGame}>play my goose game</a> :D)
+              Outside of code I'm into astronomy and geese! (Please scroll down to <a href="#goose-game" onClick={scrollToGooseGame}>play my goose game</a> :D)
             </p>
           </div>
         </div>
